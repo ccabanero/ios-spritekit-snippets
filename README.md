@@ -27,7 +27,6 @@ ___Swift___
 ___Objective-C___
 
 ````
-
     SKSpriteNode *spriteNode = [[SKSpriteNode alloc] initWithColor:[SKColor redColor] size:CGSizeMake(100, 100)];
     spriteNode.name = @"redSquare";
     spriteNode.position = CGPointMake(CGRectGetMaxX(self.frame) - 100, CGRectGetMinY(self.frame) + 150);
@@ -55,7 +54,7 @@ ___Objective-C___
     [self addChild:backgroundSpaceNode];
 ````
 
-####Scene Transition
+####Transitioning Between Scenes
 
 ___Swift___
 
