@@ -1,13 +1,13 @@
 ios-spritekit-snippets
 ======================
 
-###Description
+##Description
 
 This repo simply contains sample code for using the SpriteKit framework.
 
 ![icon](imgs/spritekit-icon.png)
 
-###Language
+##Languages
 
 Swift and Objective-C
 
@@ -68,6 +68,6 @@ ___Swift___
             
 ````
 
-####Connect
+##Connect
 * Twitter: [@clintcabanero](http://twitter.com/clintcabanero)
 * GitHub: [ccabanero](http:///github.com/ccabanero)
