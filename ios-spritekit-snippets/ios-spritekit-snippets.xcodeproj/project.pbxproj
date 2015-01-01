@@ -8,13 +8,15 @@
 
 /* Begin PBXBuildFile section */
 		2140C3781A55D73E005EA25D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2140C3771A55D73E005EA25D /* AppDelegate.swift */; };
-		2140C37A1A55D73E005EA25D /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 2140C3791A55D73E005EA25D /* GameScene.sks */; };
-		2140C37C1A55D73E005EA25D /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2140C37B1A55D73E005EA25D /* GameScene.swift */; };
 		2140C37E1A55D73E005EA25D /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2140C37D1A55D73E005EA25D /* GameViewController.swift */; };
 		2140C3811A55D73E005EA25D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2140C37F1A55D73E005EA25D /* Main.storyboard */; };
 		2140C3831A55D73E005EA25D /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2140C3821A55D73E005EA25D /* Images.xcassets */; };
 		2140C3861A55D73E005EA25D /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2140C3841A55D73E005EA25D /* LaunchScreen.xib */; };
 		2140C3921A55D73E005EA25D /* ios_spritekit_snippetsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2140C3911A55D73E005EA25D /* ios_spritekit_snippetsTests.swift */; };
+		2140C3A11A55D92C005EA25D /* MenuScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2140C3A01A55D92C005EA25D /* MenuScene.swift */; };
+		2140C3A31A55D93A005EA25D /* MenuScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 2140C3A21A55D93A005EA25D /* MenuScene.sks */; };
+		2140C3AA1A55DFD9005EA25D /* AsteroidScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2140C3A91A55DFD9005EA25D /* AsteroidScene.swift */; };
+		2140C3AC1A55DFE7005EA25D /* AsteroidScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 2140C3AB1A55DFE7005EA25D /* AsteroidScene.sks */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -31,8 +33,6 @@
 		2140C3721A55D73E005EA25D /* ios-spritekit-snippets.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ios-spritekit-snippets.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2140C3761A55D73E005EA25D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2140C3771A55D73E005EA25D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		2140C3791A55D73E005EA25D /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
-		2140C37B1A55D73E005EA25D /* GameScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
 		2140C37D1A55D73E005EA25D /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
 		2140C3801A55D73E005EA25D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		2140C3821A55D73E005EA25D /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
@@ -40,6 +40,10 @@
 		2140C38B1A55D73E005EA25D /* ios-spritekit-snippetsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "ios-spritekit-snippetsTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2140C3901A55D73E005EA25D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2140C3911A55D73E005EA25D /* ios_spritekit_snippetsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ios_spritekit_snippetsTests.swift; sourceTree = "<group>"; };
+		2140C3A01A55D92C005EA25D /* MenuScene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuScene.swift; sourceTree = "<group>"; };
+		2140C3A21A55D93A005EA25D /* MenuScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = MenuScene.sks; sourceTree = "<group>"; };
+		2140C3A91A55DFD9005EA25D /* AsteroidScene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AsteroidScene.swift; sourceTree = "<group>"; };
+		2140C3AB1A55DFE7005EA25D /* AsteroidScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = AsteroidScene.sks; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,12 +86,12 @@
 			isa = PBXGroup;
 			children = (
 				2140C3771A55D73E005EA25D /* AppDelegate.swift */,
-				2140C3791A55D73E005EA25D /* GameScene.sks */,
-				2140C37B1A55D73E005EA25D /* GameScene.swift */,
 				2140C37D1A55D73E005EA25D /* GameViewController.swift */,
 				2140C37F1A55D73E005EA25D /* Main.storyboard */,
-				2140C3821A55D73E005EA25D /* Images.xcassets */,
 				2140C3841A55D73E005EA25D /* LaunchScreen.xib */,
+				2140C3821A55D73E005EA25D /* Images.xcassets */,
+				2140C39B1A55D7BB005EA25D /* Menu */,
+				2140C3A41A55DF1D005EA25D /* Scene1 */,
 				2140C3751A55D73E005EA25D /* Supporting Files */,
 			);
 			path = "ios-spritekit-snippets";
@@ -116,6 +120,24 @@
 				2140C3901A55D73E005EA25D /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		2140C39B1A55D7BB005EA25D /* Menu */ = {
+			isa = PBXGroup;
+			children = (
+				2140C3A01A55D92C005EA25D /* MenuScene.swift */,
+				2140C3A21A55D93A005EA25D /* MenuScene.sks */,
+			);
+			name = Menu;
+			sourceTree = "<group>";
+		};
+		2140C3A41A55DF1D005EA25D /* Scene1 */ = {
+			isa = PBXGroup;
+			children = (
+				2140C3A91A55DFD9005EA25D /* AsteroidScene.swift */,
+				2140C3AB1A55DFE7005EA25D /* AsteroidScene.sks */,
+			);
+			name = Scene1;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -200,8 +222,9 @@
 			files = (
 				2140C3861A55D73E005EA25D /* LaunchScreen.xib in Resources */,
 				2140C3831A55D73E005EA25D /* Images.xcassets in Resources */,
-				2140C37A1A55D73E005EA25D /* GameScene.sks in Resources */,
+				2140C3A31A55D93A005EA25D /* MenuScene.sks in Resources */,
 				2140C3811A55D73E005EA25D /* Main.storyboard in Resources */,
+				2140C3AC1A55DFE7005EA25D /* AsteroidScene.sks in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -219,9 +242,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2140C37C1A55D73E005EA25D /* GameScene.swift in Sources */,
+				2140C3A11A55D92C005EA25D /* MenuScene.swift in Sources */,
 				2140C37E1A55D73E005EA25D /* GameViewController.swift in Sources */,
 				2140C3781A55D73E005EA25D /* AppDelegate.swift in Sources */,
+				2140C3AA1A55DFD9005EA25D /* AsteroidScene.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
