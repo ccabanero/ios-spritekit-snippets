@@ -54,6 +54,33 @@ ___Objective-C___
     [self addChild:backgroundSpaceNode];
 ````
 
+####Play a sound file in a Scene
+
+___Swift___
+
+````
+	let soundAction = SKAction.playSoundFileNamed("space-ambient.wav", waitForCompletion: true);
+    
+    //play once
+    scene.runAction(soundAction);
+
+    //play and repeat forever
+    //self.runAction(SKAction.repeatActionForever(soundAction))
+        
+````
+
+___Objective-C___
+
+````
+	SKAction *soundAction = [SKAction playSoundFileNamed:@"space-ambient.wav" waitForCompletion:YES];
+    
+    //play once
+    [self runAction:soundAction];
+    
+    //play and repeat forever
+    //[self runAction:[SKAction repeatActionForever:soundAction]];
+````
+
 ####Transitioning Between Scenes
 
 ___Swift___
