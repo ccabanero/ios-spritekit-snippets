@@ -171,6 +171,29 @@ ___Swift___
         
 ````
 
+####Executing a Custom Action
+
+___Swift___
+
+````
+	let customAction = SKAction.customActionWithDuration(0.0, actionBlock: { (node:SKNode!, elapsed: CGFloat) -> Void in
+            self.addAsteroidToScene()
+        })
+        
+    scene.runAction(customAction)
+````
+
+___Objective-C___
+
+````
+	SKAction *makeAsteroids = [SKAction sequence:@[
+                                                   [SKAction performSelector:@selector(generateAsteroid) onTarget:self],
+                                                   [SKAction waitForDuration:3.0 withRange:0.2]
+                                                   ]];
+    
+    [scene runAction: [SKAction repeatActionForever:makeAsteroids]];
+````
+
 ___Objective-C___
 
 ````
