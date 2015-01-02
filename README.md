@@ -168,6 +168,73 @@ ___Swift___
             
 ````
 
+####Handline a User's Touch Gestures on a Scene
+
+___Swift___
+
+````
+override func touchesBegan(touches: NSSet, withEvent event: UIEvent) {
+        
+	//get touch gesture
+    let touch: AnyObject? = touches.anyObject()
+        
+    //get location of touch 
+    let location = touch?.locationInNode(self)
+        
+    //get the node that was touched
+    let node = self.nodeAtPoint(location!)
+        
+    //query for node of interest
+    if(node.name == "fireButtonNode") {
+            
+        //do stuff
+        //println("fire")
+    }
+}
+    
+override func touchesMoved(touches: NSSet, withEvent event: UIEvent) {
+        
+	//handle pan gestures (i.e. fingure drags)
+}
+````
+
+___Objective-C___
+
+````
+- (void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event {
+    
+    //get the touch gesture
+    UITouch *touch = [touches anyObject];
+    
+    //get location of touch
+    CGPoint location = [touch locationInNode:self];
+    
+    //get node that was touched
+    SKNode *node = [self nodeAtPoint:location];
+    
+    //query for node of interest
+    if([node.name isEqualToString:@"fireButtonNode"]) {
+        
+        //do stuff...
+        //NSLog(@"%@", @"fire!");
+    }
+}
+
+- (void)touchesMoved:(NSSet *)touches withEvent:(UIEvent *)event {
+    
+    for (UITouch *touch in touches) {
+        
+        //get location of touch
+        CGPoint location = [touch locationInNode:self];
+        
+        if([node.name isEqualToString:@"fireButtonNode"]) {
+            
+            //do stuff
+        }
+    }
+}
+````
+
 ####Section Name
 
 ___Swift___
