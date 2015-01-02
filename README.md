@@ -233,6 +233,48 @@ ___Objective-C___
     
 ````
 
+####Detecting Collision Between Sprite Node Physics Bodies
+
+___Swift___
+
+````
+	for asteroid in self.asteroid.collection {
+                    
+		if asteroid.hidden {
+                        
+			continue
+		}
+                    
+		if asteroid.intersectsNode(laser) {
+                        
+			asteroid.blowUp()
+                        
+			continue
+		}
+	}
+
+````
+
+___Objective-C___
+
+````
+	for(SKSpriteNode *asteroid in self.asteroids) {
+            
+		if(asteroid.hidden) {
+		
+			continue;
+		}
+            
+		if([asteroid intersectsNode:laser]) {
+                
+			[self blowUpAsteroid:asteroid withLaser:laser];
+                
+			continue;
+		}
+	}
+````
+
+
 ####Transitioning Between Scenes
 
 ___Swift___
