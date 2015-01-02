@@ -11,7 +11,8 @@ This repo simply contains sample code for using the SpriteKit framework.
 
 Swift and Objective-C
 
-##Snippets Table of Contents
+##Jumpt to a SpriteKit Snippet Topic
+
 
 [Adding a Sprite Primitive to a Scene](https://github.com/ccabanero/ios-spritekit-snippets#adding-a-sprite-primitive-to-a-scene)
 
@@ -24,6 +25,8 @@ Swift and Objective-C
 [Applying a Sequence of Actions to a Sprite Node in a Scene](https://github.com/ccabanero/ios-spritekit-snippets#applying-a-sequence-of-actions-to-a-sprite-node-in-a-scene)
 
 [Executing a Callback after Running an Action on a Sprite Node](https://github.com/ccabanero/ios-spritekit-snippets#executing-a-callback-after-running-an-action-on-a-sprite-node)
+
+[Executing a Custom Action](https://github.com/ccabanero/ios-spritekit-snippets#executing-a-custom-action)
 
 [Configuring the Physics Body property of a Sprite Node](https://github.com/ccabanero/ios-spritekit-snippets#configuring-the-physics-body-property-of-a-sprite-node)
 
