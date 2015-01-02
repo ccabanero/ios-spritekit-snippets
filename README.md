@@ -13,6 +13,8 @@ Swift and Objective-C
 
 ##Snippets
 
+At the time of this writing, a majority of the SpriteKit framework documentation was written with code samples in __Objective-C__.  The snippets below translate various SpriteKit patterns using __Swift__.
+
 ####Adding a sprite primitive to a Scene
 
 ___Swift___
@@ -54,7 +56,7 @@ ___Objective-C___
     [self addChild:backgroundSpaceNode];
 ````
 
-####Play a sound file in a Scene
+####Playing a sound file in a Scene
 
 ___Swift___
 
@@ -132,6 +134,27 @@ ___Objective-C___
     
 ````
 
+####Configuring the Physics Body property of a Sprite Node
+
+___Swift___
+
+````
+	spaceshipNode.physicsBody = SKPhysicsBody(circleOfRadius: 75)
+    spaceshipNode.physicsBody?.affectedByGravity = false
+    spaceshipNode.physicsBody?.mass = 0.02
+    
+````
+
+___Objective-C___
+
+````
+	...
+	spaceshipNode.physicsBody = [SKPhysicsBody bodyWithCircleOfRadius:75];
+    spaceshipNode.falconNode.physicsBody.affectedByGravity = NO;
+    spaceshipNode.falconNode.physicsBody.mass = 0.02;
+    
+````
+
 ####Transitioning Between Scenes
 
 ___Swift___
@@ -150,11 +173,13 @@ ___Swift___
 ___Swift___
 
 ````
+	//todo
 ````
 
 ___Objective-C___
 
 ````
+	//todo
 ````
 
 ##Connect
