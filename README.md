@@ -13,6 +13,23 @@ Swift and Objective-C
 
 ##Snippets Table of Contents
 
+[Adding a Sprite Primitive to a Scene](https://github.com/ccabanero/ios-spritekit-snippets#adding-a-sprite-primitive-to-a-scene)
+
+[Adding a Sprite with an Image/Iexture to a Scene](https://github.com/ccabanero/ios-spritekit-snippets#adding-a-sprite-with-an-imagetexture-to-a-scene)
+
+[Playing a Sound file in a Scene](https://github.com/ccabanero/ios-spritekit-snippets#playing-a-sound-file-in-a-scene)
+
+[Applying an Action (e.g. Move) to a Sprite Node in a Scene](https://github.com/ccabanero/ios-spritekit-snippets#applying-an-action-eg-move-to-a-sprite-node-in-a-scene)
+
+[Applying a Sequence of Actions to a Sprite Node in a Scene](https://github.com/ccabanero/ios-spritekit-snippets#applying-a-sequence-of-actions-to-a-sprite-node-in-a-scene)
+
+[Executing a Callback after Running an Action on a Sprite Node](https://github.com/ccabanero/ios-spritekit-snippets#executing-a-callback-after-running-an-action-on-a-sprite-node)
+
+[Configuring the Physics Body property of a Sprite Node](https://github.com/ccabanero/ios-spritekit-snippets#configuring-the-physics-body-property-of-a-sprite-node)
+
+[Transitioning Between Scenes](https://github.com/ccabanero/ios-spritekit-snippets#transitioning-between-scenes)
+
+[Handline a User's Touch Gestures on a Scene](https://github.com/ccabanero/ios-spritekit-snippets#handline-a-users-touch-gestures-on-a-scene)
 
 ##Snippets
 
@@ -39,7 +56,7 @@ ___Objective-C___
     
 ````
 
-####Adding a Sprite with an Image/Iexture to a Scene
+####Adding a Sprite with an Image/Texture to a Scene
 
 ___Swift___
 
