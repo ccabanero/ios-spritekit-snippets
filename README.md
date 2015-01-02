@@ -194,7 +194,25 @@ override func touchesBegan(touches: NSSet, withEvent event: UIEvent) {
     
 override func touchesMoved(touches: NSSet, withEvent event: UIEvent) {
         
-	//handle pan gestures (i.e. fingure drags)
+	//iterate pan gesture
+    for touch: AnyObject in touches {
+            
+        //get location of touch
+        let location = touch.locationInNode(self)
+            
+        //query for node of interest
+        let node = self.nodeAtPoint(location)
+            
+        if(node.name == "fireButtonNode") {
+                
+            continue
+        }
+            
+        //move spaceship to finger touch location
+        let newPosition: CGPoint = CGPointMake(location.x + 150.0, location.y)
+        let moveAction: SKAction = SKAction.moveTo(newPosition, duration: 0.8)
+        spaceshipNode.runAction(moveAction)
+    }
 }
 ````
 
@@ -222,15 +240,24 @@ ___Objective-C___
 
 - (void)touchesMoved:(NSSet *)touches withEvent:(UIEvent *)event {
     
+    //iterate pan gesture
     for (UITouch *touch in touches) {
         
         //get location of touch
         CGPoint location = [touch locationInNode:self];
         
+        //query for node of interest
+        SKNode *node = [self nodeAtPoint:location];
+        
         if([node.name isEqualToString:@"fireButtonNode"]) {
             
-            //do stuff
+            continue;
         }
+        
+        //move spaceship to finger touch location
+        CGPoint newPosition = CGPointMake(location.x + 150.0f, location.y);
+        SKAction *moveAction = [SKAction moveTo:newPosition duration:0.8];
+        [spaceshipNode runAction:moveAction];
     }
 }
 ````
