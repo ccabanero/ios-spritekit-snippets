@@ -62,7 +62,7 @@ ___Swift___
 	let soundAction = SKAction.playSoundFileNamed("space-ambient.wav", waitForCompletion: true);
     
     //play once
-    scene.runAction(soundAction);
+    scene.runAction(soundAction)
 
     //play and repeat forever
     //self.runAction(SKAction.repeatActionForever(soundAction))
@@ -81,6 +81,57 @@ ___Objective-C___
     //[self runAction:[SKAction repeatActionForever:soundAction]];
 ````
 
+####Applying an Action (e.g. Move) to a Sprite Node in a Scene
+
+___Swift___
+
+````
+	let moveAction = SKAction.moveByX(100.0, y:0.0, duration: 4.0)
+    
+    spaceshipNode.runAction(moveAction)
+        
+````
+
+___Objective-C___
+
+````
+	SKAction *moveAction = [SKAction moveByX:100.0 y:0.0 duration:4.0];
+	
+	[spaceshipNode runAction:moveAction];
+
+````
+
+####Applying a Sequence of Actions to a Sprite Node in a Scene
+
+___Swift___
+
+````
+    let hover = SKAction.sequence([SKAction.waitForDuration(0.5),
+        SKAction.moveByX(0.0, y:10.0, duration:1.0),
+        SKAction.moveByX(0.0, y:5.0, duration:1.0),
+        SKAction.waitForDuration(0.5),
+        SKAction.moveByX(0.0, y:-10.0, duration:1.0),
+        SKAction.moveByX(0.0, y:-5.0, duration:1.0)])
+        
+    spaceshipNode.runAction(SKAction.repeatActionForever(hover))
+        
+````
+
+___Objective-C___
+
+````
+	SKAction *hover = [SKAction sequence:@[
+                                [SKAction waitForDuration:0.5],
+                                [SKAction moveByX:0.0 y:10.0 duration:1.0],
+                                [SKAction moveByX:0.0 y:5.0 duration:1.0],
+                                [SKAction waitForDuration:0.5],
+                                [SKAction moveByX:0.0 y:-10 duration:1.0],
+                                [SKAction moveByX:0.0 y:-5 duration:1.0]]];
+                                
+    [spaceshipNode runAction: [SKAction repeatActionForever:hover]];
+    
+````
+
 ####Transitioning Between Scenes
 
 ___Swift___
@@ -92,6 +143,18 @@ ___Swift___
 	let transition = SKTransition.revealWithDirection(SKTransitionDirection.Down, duration: 1.0)
 	self.view?.presentScene(asteroidScene, transition:transition)
             
+````
+
+####Section Name
+
+___Swift___
+
+````
+````
+
+___Objective-C___
+
+````
 ````
 
 ##Connect
