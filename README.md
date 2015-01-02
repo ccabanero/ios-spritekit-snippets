@@ -32,6 +32,8 @@ Swift and Objective-C
 
 [Detecting Collision Between Sprite Node Physics Bodies](https://github.com/ccabanero/ios-spritekit-snippets#detecting-collision-between-sprite-node-physics-bodies)
 
+[Creating an SKEmitter Node (e.g. Particles/Explosion)](https://github.com/ccabanero/ios-spritekit-snippets#creating-an-skemitter-node-eg-particlesexplosion)
+
 [Transitioning Between Scenes](https://github.com/ccabanero/ios-spritekit-snippets#transitioning-between-scenes)
 
 [Handline a User's Touch Gestures on a Scene](https://github.com/ccabanero/ios-spritekit-snippets#handline-a-users-touch-gestures-on-a-scene)
