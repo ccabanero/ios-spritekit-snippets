@@ -15,7 +15,7 @@ Swift and Objective-C
 
 [Adding a Sprite Primitive to a Scene](https://github.com/ccabanero/ios-spritekit-snippets#adding-a-sprite-primitive-to-a-scene)
 
-[Adding a Sprite with an Image/Iexture to a Scene](https://github.com/ccabanero/ios-spritekit-snippets#adding-a-sprite-with-an-imagetexture-to-a-scene)
+[Adding a Sprite with an Image/Texture to a Scene](https://github.com/ccabanero/ios-spritekit-snippets#adding-a-sprite-with-an-imagetexture-to-a-scene)
 
 [Playing a Sound file in a Scene](https://github.com/ccabanero/ios-spritekit-snippets#playing-a-sound-file-in-a-scene)
 
