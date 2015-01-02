@@ -30,6 +30,8 @@ Swift and Objective-C
 
 [Configuring the Physics Body property of a Sprite Node](https://github.com/ccabanero/ios-spritekit-snippets#configuring-the-physics-body-property-of-a-sprite-node)
 
+[Detecting Collision Between Sprite Node Physics Bodies](https://github.com/ccabanero/ios-spritekit-snippets#detecting-collision-between-sprite-node-physics-bodies)
+
 [Transitioning Between Scenes](https://github.com/ccabanero/ios-spritekit-snippets#transitioning-between-scenes)
 
 [Handline a User's Touch Gestures on a Scene](https://github.com/ccabanero/ios-spritekit-snippets#handline-a-users-touch-gestures-on-a-scene)
