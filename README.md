@@ -276,6 +276,85 @@ ___Objective-C___
 	}
 ````
 
+####Creating an SKEmitter Node (e.g. Particles/Explosion)
+
+___Swift___
+
+````
+    private func newExplosion() -> SKEmitterNode {
+        
+        let explosion = SKEmitterNode()
+        
+        let image = UIImage(named:"spark.png")!
+        explosion.particleTexture = SKTexture(image: image)
+        explosion.particleColor = UIColor.brownColor()
+        explosion.numParticlesToEmit = 100
+        explosion.particleBirthRate = 450
+        explosion.particleLifetime = 2
+        explosion.emissionAngleRange = 360
+        explosion.particleSpeed = 100
+        explosion.particleSpeedRange = 50
+        explosion.xAcceleration = 0
+        explosion.yAcceleration = 0
+        explosion.particleAlpha = 0.8
+        explosion.particleAlphaRange = 0.2
+        explosion.particleAlphaSpeed = -0.5
+        explosion.particleScale = 0.75
+        explosion.particleScaleRange = 0.4
+        explosion.particleScaleSpeed = -0.5
+        explosion.particleRotation = 0
+        explosion.particleRotationRange = 0
+        explosion.particleRotationSpeed = 0
+        explosion.particleColorBlendFactor = 1
+        explosion.particleColorBlendFactorRange = 0
+        explosion.particleColorBlendFactorSpeed = 0
+        explosion.particleBlendMode = SKBlendMode.Add
+        
+        return explosion
+    }
+    
+````
+
+___Objective-C___
+
+````
+
+- (SKEmitterNode *)newExplosion {
+    
+    //instantiate explosion emitter
+    SKEmitterNode *explosion = [[SKEmitterNode alloc] init];
+    
+    //[explosion setParticleTexture:[SKTexturetext:@"asteroid1"]];
+    UIImage *image = [UIImage imageNamed:@"spark.png"];
+    [explosion setParticleTexture:[SKTexture textureWithImage:image]];
+    [explosion setParticleColor:[UIColor brownColor]];
+    [explosion setNumParticlesToEmit:100];
+    [explosion setParticleBirthRate:450];
+    [explosion setParticleLifetime:2];
+    [explosion setEmissionAngleRange:360];
+    [explosion setParticleSpeed:100];
+    [explosion setParticleSpeedRange:50];
+    [explosion setXAcceleration:0];
+    [explosion setYAcceleration:0];
+    [explosion setParticleAlpha:0.8];
+    [explosion setParticleAlphaRange:0.2];
+    [explosion setParticleAlphaSpeed:-0.5];
+    [explosion setParticleScale:0.75];
+    [explosion setParticleScaleRange:0.4];
+    [explosion setParticleScaleSpeed:-0.5];
+    [explosion setParticleRotation:0];
+    [explosion setParticleRotationRange:0];
+    [explosion setParticleRotationSpeed:0];
+    
+    [explosion setParticleColorBlendFactor:1];
+    [explosion setParticleColorBlendFactorRange:0];
+    [explosion setParticleColorBlendFactorSpeed:0];
+    [explosion setParticleBlendMode:SKBlendModeAdd];
+    
+    return explosion;
+}
+````
+
 
 ####Transitioning Between Scenes
 
