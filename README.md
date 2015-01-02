@@ -134,6 +134,38 @@ ___Objective-C___
     
 ````
 
+####Executing a Callback after Running an Action on a Sprite Node
+
+___Swift___
+
+````
+	//laser action
+	let laserAction = SKAction.moveToX(1600, duration: 0.5)
+
+	//run action, then do something afterwards
+    laser.runAction(laserAction, completion:{
+            
+        laser.hidden = true
+        laser.physicsBody?.dynamic = false
+    })
+        
+````
+
+___Objective-C___
+
+````
+	//laser action
+	SKAction *laserAction = [SKAction moveToX:1600 duration:0.5];
+    
+    //run action, then do something afterwards
+    [laser runAction:laserAction completion:^{
+    
+        laser.hidden = YES;
+        laser.physicsBody = nil;
+    }];
+    
+````
+
 ####Configuring the Physics Body property of a Sprite Node
 
 ___Swift___
