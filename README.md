@@ -11,11 +11,14 @@ This repo simply contains sample code for using the SpriteKit framework.
 
 Swift and Objective-C
 
+##Snippets Table of Contents
+
+
 ##Snippets
 
 At the time of this writing, a majority of the SpriteKit framework documentation was written with code samples in __Objective-C__.  The snippets below translate various SpriteKit patterns using __Swift__.
 
-####Adding a sprite primitive to a Scene
+####Adding a Sprite Primitive to a Scene
 
 ___Swift___
 
@@ -36,7 +39,7 @@ ___Objective-C___
     
 ````
 
-####Adding a sprite with an image/texture to a Scene
+####Adding a Sprite with an Image/Iexture to a Scene
 
 ___Swift___
 
@@ -56,7 +59,7 @@ ___Objective-C___
     [self addChild:backgroundSpaceNode];
 ````
 
-####Playing a sound file in a Scene
+####Playing a Sound file in a Scene
 
 ___Swift___
 
