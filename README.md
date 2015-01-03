@@ -28,6 +28,8 @@ Swift and Objective-C
 
 [Executing a Custom Action](https://github.com/ccabanero/ios-spritekit-snippets#executing-a-custom-action)
 
+[Handling a User's Touch Gestures on a Scene](https://github.com/ccabanero/ios-spritekit-snippets#handline-a-users-touch-gestures-on-a-scene)
+
 [Configuring the Physics Body property of a Sprite Node](https://github.com/ccabanero/ios-spritekit-snippets#configuring-the-physics-body-property-of-a-sprite-node)
 
 [Detecting Collision Between Sprite Node Physics Bodies](https://github.com/ccabanero/ios-spritekit-snippets#detecting-collision-between-sprite-node-physics-bodies)
@@ -35,8 +37,6 @@ Swift and Objective-C
 [Creating an SKEmitter Node (e.g. Particles/Explosion)](https://github.com/ccabanero/ios-spritekit-snippets#creating-an-skemitter-node-eg-particlesexplosion)
 
 [Transitioning Between Scenes](https://github.com/ccabanero/ios-spritekit-snippets#transitioning-between-scenes)
-
-[Handline a User's Touch Gestures on a Scene](https://github.com/ccabanero/ios-spritekit-snippets#handline-a-users-touch-gestures-on-a-scene)
 
 ##Snippets
 
@@ -371,7 +371,7 @@ ___Swift___
             
 ````
 
-####Handline a User's Touch Gestures on a Scene
+####Handling a User's Touch Gestures on a Scene
 
 ___Swift___
 
