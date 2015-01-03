@@ -28,7 +28,7 @@ Swift and Objective-C
 
 [Executing a Custom Action](https://github.com/ccabanero/ios-spritekit-snippets#executing-a-custom-action)
 
-[Handling a User's Touch Gestures on a Scene](https://github.com/ccabanero/ios-spritekit-snippets#handline-a-users-touch-gestures-on-a-scene)
+[Handling a User's Touch Gestures on a Scene](https://github.com/ccabanero/ios-spritekit-snippets#handling-a-users-touch-gestures-on-a-scene)
 
 [Configuring the Physics Body property of a Sprite Node](https://github.com/ccabanero/ios-spritekit-snippets#configuring-the-physics-body-property-of-a-sprite-node)
 
