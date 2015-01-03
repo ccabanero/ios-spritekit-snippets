@@ -216,6 +216,100 @@ ___Objective-C___
     
 ````
 
+####Handling a User's Touch Gestures on a Scene
+
+___Swift___
+
+````
+override func touchesBegan(touches: NSSet, withEvent event: UIEvent) {
+        
+	//get touch gesture
+    let touch: AnyObject? = touches.anyObject()
+        
+    //get location of touch 
+    let location = touch?.locationInNode(self)
+        
+    //get the node that was touched
+    let node = self.nodeAtPoint(location!)
+        
+    //query for node of interest
+    if(node.name == "fireButtonNode") {
+            
+        //do stuff
+        //println("fire")
+    }
+}
+    
+override func touchesMoved(touches: NSSet, withEvent event: UIEvent) {
+        
+	//iterate pan gesture
+    for touch: AnyObject in touches {
+            
+        //get location of touch
+        let location = touch.locationInNode(self)
+            
+        //query for node of interest
+        let node = self.nodeAtPoint(location)
+            
+        if(node.name == "fireButtonNode") {
+                
+            continue
+        }
+            
+        //move spaceship to finger touch location
+        let newPosition: CGPoint = CGPointMake(location.x + 150.0, location.y)
+        let moveAction: SKAction = SKAction.moveTo(newPosition, duration: 0.8)
+        spaceshipNode.runAction(moveAction)
+    }
+}
+````
+
+___Objective-C___
+
+````
+- (void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event {
+    
+    //get the touch gesture
+    UITouch *touch = [touches anyObject];
+    
+    //get location of touch
+    CGPoint location = [touch locationInNode:self];
+    
+    //get node that was touched
+    SKNode *node = [self nodeAtPoint:location];
+    
+    //query for node of interest
+    if([node.name isEqualToString:@"fireButtonNode"]) {
+        
+        //do stuff...
+        //NSLog(@"%@", @"fire!");
+    }
+}
+
+- (void)touchesMoved:(NSSet *)touches withEvent:(UIEvent *)event {
+    
+    //iterate pan gesture
+    for (UITouch *touch in touches) {
+        
+        //get location of touch
+        CGPoint location = [touch locationInNode:self];
+        
+        //query for node of interest
+        SKNode *node = [self nodeAtPoint:location];
+        
+        if([node.name isEqualToString:@"fireButtonNode"]) {
+            
+            continue;
+        }
+        
+        //move spaceship to finger touch location
+        CGPoint newPosition = CGPointMake(location.x + 150.0f, location.y);
+        SKAction *moveAction = [SKAction moveTo:newPosition duration:0.8];
+        [spaceshipNode runAction:moveAction];
+    }
+}
+````
+
 ####Configuring the Physics Body property of a Sprite Node
 
 ___Swift___
@@ -369,100 +463,6 @@ ___Swift___
 	let transition = SKTransition.revealWithDirection(SKTransitionDirection.Down, duration: 1.0)
 	self.view?.presentScene(asteroidScene, transition:transition)
             
-````
-
-####Handling a User's Touch Gestures on a Scene
-
-___Swift___
-
-````
-override func touchesBegan(touches: NSSet, withEvent event: UIEvent) {
-        
-	//get touch gesture
-    let touch: AnyObject? = touches.anyObject()
-        
-    //get location of touch 
-    let location = touch?.locationInNode(self)
-        
-    //get the node that was touched
-    let node = self.nodeAtPoint(location!)
-        
-    //query for node of interest
-    if(node.name == "fireButtonNode") {
-            
-        //do stuff
-        //println("fire")
-    }
-}
-    
-override func touchesMoved(touches: NSSet, withEvent event: UIEvent) {
-        
-	//iterate pan gesture
-    for touch: AnyObject in touches {
-            
-        //get location of touch
-        let location = touch.locationInNode(self)
-            
-        //query for node of interest
-        let node = self.nodeAtPoint(location)
-            
-        if(node.name == "fireButtonNode") {
-                
-            continue
-        }
-            
-        //move spaceship to finger touch location
-        let newPosition: CGPoint = CGPointMake(location.x + 150.0, location.y)
-        let moveAction: SKAction = SKAction.moveTo(newPosition, duration: 0.8)
-        spaceshipNode.runAction(moveAction)
-    }
-}
-````
-
-___Objective-C___
-
-````
-- (void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event {
-    
-    //get the touch gesture
-    UITouch *touch = [touches anyObject];
-    
-    //get location of touch
-    CGPoint location = [touch locationInNode:self];
-    
-    //get node that was touched
-    SKNode *node = [self nodeAtPoint:location];
-    
-    //query for node of interest
-    if([node.name isEqualToString:@"fireButtonNode"]) {
-        
-        //do stuff...
-        //NSLog(@"%@", @"fire!");
-    }
-}
-
-- (void)touchesMoved:(NSSet *)touches withEvent:(UIEvent *)event {
-    
-    //iterate pan gesture
-    for (UITouch *touch in touches) {
-        
-        //get location of touch
-        CGPoint location = [touch locationInNode:self];
-        
-        //query for node of interest
-        SKNode *node = [self nodeAtPoint:location];
-        
-        if([node.name isEqualToString:@"fireButtonNode"]) {
-            
-            continue;
-        }
-        
-        //move spaceship to finger touch location
-        CGPoint newPosition = CGPointMake(location.x + 150.0f, location.y);
-        SKAction *moveAction = [SKAction moveTo:newPosition duration:0.8];
-        [spaceshipNode runAction:moveAction];
-    }
-}
 ````
 
 ####Section Name
