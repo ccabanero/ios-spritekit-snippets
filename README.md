@@ -11,8 +11,11 @@ This repo simply contains sample code for using the SpriteKit framework.
 
 Swift and Objective-C
 
-##Jumpt to a SpriteKit Snippet Topic
+##Code Snippets
 
+At the time of this writing, a majority of the SpriteKit framework documentation was written with code samples in __Objective-C__.  The snippets below translate various SpriteKit patterns using __Swift__.
+
+####Jump to a Topic
 
 [Adding a Sprite Primitive to a Scene](https://github.com/ccabanero/ios-spritekit-snippets#adding-a-sprite-primitive-to-a-scene)
 
@@ -38,9 +41,6 @@ Swift and Objective-C
 
 [Transitioning Between Scenes](https://github.com/ccabanero/ios-spritekit-snippets#transitioning-between-scenes)
 
-##Snippets
-
-At the time of this writing, a majority of the SpriteKit framework documentation was written with code samples in __Objective-C__.  The snippets below translate various SpriteKit patterns using __Swift__.
 
 ####Adding a Sprite Primitive to a Scene
 
