@@ -216,6 +216,27 @@ ___Objective-C___
     
 ````
 
+####Animation using Textures and Executing Multiple Action in Parallel
+
+````
+	//textures for walk animation
+    let walkTexture1 = SKTexture(imageNamed: "walk1")
+    let walkTexture2 = SKTexture(imageNamed: "walk2")
+
+    //simulate walking by animating textures
+    let walkAction = SKAction.animateWithTextures([walkTexture1, walkTexture2], timePerFrame: 0.2)
+    let repeatedWalkAction = SKAction.repeatActionForever(walkAction)
+        
+    //action for moving
+    let moveAction = SKAction.moveByX(100, y: 0, duration: 2.0)
+    let repeatedMoveAction = SKAction.repeatActionForever(moveAction)
+        
+    //execute multiple actions in parallel (walk animatoin + moving)
+    let walkAnimation = SKAction.group([repeatedWalkAction, repeatedMoveAction])
+        
+    scene.runAction(walkAnimation)
+````
+
 ####Handling a User's Touch Gestures on a Scene
 
 ___Swift___
