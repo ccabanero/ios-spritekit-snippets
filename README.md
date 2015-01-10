@@ -31,6 +31,8 @@ At the time of this writing, a majority of the SpriteKit framework documentation
 
 [Executing a Custom Action](https://github.com/ccabanero/ios-spritekit-snippets#executing-a-custom-action)
 
+[Animating Textures and Executing Multiple Actions in Parallel]()
+
 [Handling a User's Touch Gestures on a Scene](https://github.com/ccabanero/ios-spritekit-snippets#handling-a-users-touch-gestures-on-a-scene)
 
 [Configuring the Physics Body property of a Sprite Node](https://github.com/ccabanero/ios-spritekit-snippets#configuring-the-physics-body-property-of-a-sprite-node)
@@ -201,22 +203,9 @@ ___Objective-C___
     [scene runAction: [SKAction repeatActionForever:makeAsteroids]];
 ````
 
-___Objective-C___
+####Animating Textures and Executing Multiple Actions in Parallel
 
-````
-	//laser action
-	SKAction *laserAction = [SKAction moveToX:1600 duration:0.5];
-    
-    //run action, then do something afterwards
-    [laser runAction:laserAction completion:^{
-    
-        laser.hidden = YES;
-        laser.physicsBody = nil;
-    }];
-    
-````
-
-####Animation using Textures and Executing Multiple Action in Parallel
+___Swift___
 
 ````
 	//textures for walk animation
