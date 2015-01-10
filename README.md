@@ -41,6 +41,8 @@ At the time of this writing, a majority of the SpriteKit framework documentation
 
 [Creating an SKEmitter Node (e.g. Particles/Explosion)](https://github.com/ccabanero/ios-spritekit-snippets#creating-an-skemitter-node-eg-particlesexplosion)
 
+[Adding a SpriteKit Particle File to your Scene](https://github.com/ccabanero/ios-spritekit-snippets#adding-a-spritekit-particle-file-to-your-scene)
+
 [Transitioning Between Scenes](https://github.com/ccabanero/ios-spritekit-snippets#transitioning-between-scenes)
 
 
