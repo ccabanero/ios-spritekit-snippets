@@ -31,7 +31,7 @@ At the time of this writing, a majority of the SpriteKit framework documentation
 
 [Executing a Custom Action](https://github.com/ccabanero/ios-spritekit-snippets#executing-a-custom-action)
 
-[Animating Textures and Executing Multiple Actions in Parallel]()
+[Animating Textures and Executing Multiple Actions in Parallel](https://github.com/ccabanero/ios-spritekit-snippets#animating-textures-and-executing-multiple-actions-in-parallel)
 
 [Handling a User's Touch Gestures on a Scene](https://github.com/ccabanero/ios-spritekit-snippets#handling-a-users-touch-gestures-on-a-scene)
 
