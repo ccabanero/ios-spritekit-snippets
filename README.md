@@ -461,6 +461,23 @@ ___Objective-C___
 }
 ````
 
+####Adding a SpriteKit Particle File to your Scene
+
+___Swift___
+
+````
+
+	//create file via Xcode - File - SpriteKit Particle File - template ...
+	
+	 let fireEmitter = SKEmitterNode(fileNamed: "smallFire.sks")
+     fireEmitter.position = CGPointMake(self.frame.size.width/2, self.frame.size.height/2 - 200)
+     fireEmitter.name = "smallFire"
+     fireEmitter.zPosition = 1
+     fireEmitter.targetNode = self
+     fireEmitter.particleLifetime = 1
+        
+     self.addChild(fireEmitter)
+````
 
 ####Transitioning Between Scenes
 
