@@ -494,20 +494,6 @@ ___Swift___
             
 ````
 
-####Section Name
-
-___Swift___
-
-````
-	//todo
-````
-
-___Objective-C___
-
-````
-	//todo
-````
-
 ##Connect
 * Twitter: [@clintcabanero](http://twitter.com/clintcabanero)
 * GitHub: [ccabanero](http:///github.com/ccabanero)
