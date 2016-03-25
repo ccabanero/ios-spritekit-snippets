@@ -233,47 +233,47 @@ ___Swift___
 ___Swift___
 
 ````
-override func touchesBegan(touches: NSSet, withEvent event: UIEvent) {
-        
-	//get touch gesture
-    let touch: AnyObject? = touches.anyObject()
-        
-    //get location of touch 
-    let location = touch?.locationInNode(self)
-        
-    //get the node that was touched
-    let node = self.nodeAtPoint(location!)
-        
-    //query for node of interest
-    if(node.name == "fireButtonNode") {
+override func touchesBegan(touches: Set<UITouch>, withEvent event: UIEvent?) {
+    
+    for touch in touches {
+    	
+    	let location = touch.locationInNode(self)
             
-        //do stuff
-        //println("fire")
+        //get the node that was touched
+    	let node = self.nodeAtPoint(location)
+        
+    	//query for node of interest
+    	if(node.name == "fireButtonNode") {
+            
+        	//do stuff
+        	//print("fire")
+    	}
+
     }
 }
     
-override func touchesMoved(touches: NSSet, withEvent event: UIEvent) {
+override func touchesMoved(touches: Set<UITouch>, withEvent event: UIEvent?) {
         
-	//iterate pan gesture
-    for touch: AnyObject in touches {
+        //iterate pan gesture
+        for touch: AnyObject in touches {
             
-        //get location of touch
-        let location = touch.locationInNode(self)
+            //get location of touch
+            let location = touch.locationInNode(self)
             
-        //query for node of interest
-        let node = self.nodeAtPoint(location)
+            //query for node of interest
+            let node = self.nodeAtPoint(location)
             
-        if(node.name == "fireButtonNode") {
+            if(node.name == "fireButtonNode") {
                 
-            continue
-        }
+                continue
+            }
             
-        //move spaceship to finger touch location
-        let newPosition: CGPoint = CGPointMake(location.x + 150.0, location.y)
-        let moveAction: SKAction = SKAction.moveTo(newPosition, duration: 0.8)
-        spaceshipNode.runAction(moveAction)
+            //move spaceship to finger touch location
+            let newPosition: CGPoint = CGPointMake(location.x + 150.0, location.y)
+            let moveAction: SKAction = SKAction.moveTo(newPosition, duration: 0.8)
+            spaceshipNode.runAction(moveAction)
+        }
     }
-}
 ````
 
 ___Objective-C___
