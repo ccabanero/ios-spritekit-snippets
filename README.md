@@ -1,7 +1,4 @@
-ios-spritekit-snippets
-======================
-
-##Description
+#SpriteKit Code Snippets
 
 This repo simply contains sample code for using the SpriteKit framework.
 
