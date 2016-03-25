@@ -52,9 +52,9 @@ ___Swift___
 
 ````
     let spriteNode = SKSpriteNode(color: SKColor.redColor(), size: CGSize(width: 100, height: 100))
-    spriteNode.name = "redSquare"
-    spriteNode.position = CGPointMake(CGRectGetMinX(self.frame) + 100, CGRectGetMaxY(self.frame) - 100
-    self.addChild(spriteNode)
+        spriteNode.name = "redSquare"
+        spriteNode.position = CGPointMake(CGRectGetMidX(self.frame), CGRectGetMidY(self.frame))
+        self.addChild(spriteNode)
     
 ````
 ___Objective-C___
