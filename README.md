@@ -319,6 +319,37 @@ ___Objective-C___
 }
 ````
 
+####Evaluating if a Sprite Node was touched in a Scene
+
+````
+override func touchesMoved (touches: Set<UITouch>, withEvent event: UIEvent?) {
+        
+        for touch in touches {
+            
+            let location = touch.locationInNode(self)
+            
+            enumerateChildNodesWithName("//*") { (node, stop) in
+                
+                if node.name == "TaretNodeName"  {
+                    
+                    if let sprite: SKSpriteNode = node as? SKSpriteNode {
+                        
+                        if CGRectContainsPoint(sprite.frame, location) {
+                            
+                            // did touch target sprite node
+                            
+                        } else {
+                            
+                            // did not touch target sprite node
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+````
+
 ####Configuring the Physics Body property of a Sprite Node
 
 ___Swift___
