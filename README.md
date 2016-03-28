@@ -84,6 +84,30 @@ ___Objective-C___
     [self addChild:backgroundSpaceNode];
 ````
 
+####Subclassing SKSpriteNode
+
+Swift
+
+````
+
+class Hero: SKSpriteNode {
+    
+    init() {
+        let texture = SKTexture(imageNamed: "Superman")
+        super.init(texture: texture, color: SKColor.blueColor(), size: texture.size())
+    }
+    
+    required init?(coder aDecoder: NSCoder) {
+        super.init(coder: aDecoder)
+    }
+    
+    func fly() {
+    	//TODO
+    }
+}
+
+````
+
 ####Playing a Sound file in a Scene
 
 ___Swift___
