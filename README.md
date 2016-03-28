@@ -18,6 +18,8 @@ At the time of this writing, a majority of the SpriteKit framework documentation
 
 [Adding a Sprite with an Image/Texture to a Scene](https://github.com/ccabanero/ios-spritekit-snippets#adding-a-sprite-with-an-imagetexture-to-a-scene)
 
+[Subclassing SKSpriteNode](https://github.com/ccabanero/ios-spritekit-snippets#subclassing-skspritenode)
+
 [Playing a Sound file in a Scene](https://github.com/ccabanero/ios-spritekit-snippets#playing-a-sound-file-in-a-scene)
 
 [Applying an Action (e.g. Move) to a Sprite Node in a Scene](https://github.com/ccabanero/ios-spritekit-snippets#applying-an-action-eg-move-to-a-sprite-node-in-a-scene)
@@ -90,10 +92,12 @@ Swift
 
 ````
 
+// Declaring the SKSpriteNode subclass
+
 class Hero: SKSpriteNode {
     
     init() {
-        let texture = SKTexture(imageNamed: "Superman")
+        let texture = SKTexture(imageNamed: "Hero")
         super.init(texture: texture, color: SKColor.blueColor(), size: texture.size())
     }
     
@@ -103,6 +107,20 @@ class Hero: SKSpriteNode {
     
     func fly() {
     	//TODO
+    }
+}
+
+// Using the SKSpriteNode subclass in a scene
+
+class GameScene: SKScene {
+
+    var hero = Hero()
+    
+    override func didMoveToView(view: SKView) {
+
+        // add hero to scene
+        hero = CGPointMake(CGRectGetMidX(view.frame), CGRectGetMidY(view.frame))
+        self.addChild(hero)
     }
 }
 
