@@ -36,6 +36,8 @@ At the time of this writing, a majority of the SpriteKit framework documentation
 
 [Configuring the Physics Body property of a Sprite Node](https://github.com/ccabanero/ios-spritekit-snippets#configuring-the-physics-body-property-of-a-sprite-node)
 
+[Configuring the Gravity of the Scene](https://github.com/ccabanero/ios-spritekit-snippets#configuring-the-gravity-of-the-scene)
+
 [Detecting Collision Between Sprite Node Physics Bodies](https://github.com/ccabanero/ios-spritekit-snippets#detecting-collision-between-sprite-node-physics-bodies)
 
 [Creating an SKEmitter Node (e.g. Particles/Explosion)](https://github.com/ccabanero/ios-spritekit-snippets#creating-an-skemitter-node-eg-particlesexplosion)
@@ -88,7 +90,7 @@ ___Objective-C___
 
 ####Subclassing SKSpriteNode
 
-Swift
+__Swift__
 
 ````
 
@@ -363,6 +365,8 @@ ___Objective-C___
 
 ####Evaluating if a Sprite Node was touched in a Scene
 
+__Swift__
+
 ````
 override func touchesMoved (touches: Set<UITouch>, withEvent event: UIEvent?) {
         
@@ -411,6 +415,17 @@ ___Objective-C___
     spaceshipNode.falconNode.physicsBody.affectedByGravity = NO;
     spaceshipNode.falconNode.physicsBody.mass = 0.02;
     
+````
+
+####Configuring the Gravity of the Scene
+
+__Swift__
+
+````
+    override func didMoveToView(view: SKView) {
+        
+        self.physicsWorld.gravity = CGVectorMake(0.0, -9.8)
+    }
 ````
 
 ####Detecting Collision Between Sprite Node Physics Bodies
