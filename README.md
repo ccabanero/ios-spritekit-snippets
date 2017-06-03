@@ -1,18 +1,18 @@
-#SpriteKit Code Snippets
+# SpriteKit Code Snippets
 
 This repo simply contains sample code for using the SpriteKit framework.
 
 ![icon](imgs/spritekit-icon.png)
 
-##Languages
+## Languages
 
 Swift and Objective-C
 
-##Code Snippets
+## Code Snippets
 
 At the time of this writing, a majority of the SpriteKit framework documentation was written with code samples in __Objective-C__.  The snippets below translate various SpriteKit patterns using __Swift__.
 
-####Jump to a Topic
+#### Jump to a Topic
 
 [Adding a Sprite Primitive to a Scene](https://github.com/ccabanero/ios-spritekit-snippets#adding-a-sprite-primitive-to-a-scene)
 
@@ -47,7 +47,7 @@ At the time of this writing, a majority of the SpriteKit framework documentation
 [Transitioning Between Scenes](https://github.com/ccabanero/ios-spritekit-snippets#transitioning-between-scenes)
 
 
-####Adding a Sprite Primitive to a Scene
+#### Adding a Sprite Primitive to a Scene
 
 ___Swift___
 
@@ -68,7 +68,7 @@ ___Objective-C___
     
 ````
 
-####Adding a Sprite with an Image/Texture to a Scene
+#### Adding a Sprite with an Image/Texture to a Scene
 
 ___Swift___
 
@@ -88,7 +88,7 @@ ___Objective-C___
     [self addChild:backgroundSpaceNode];
 ````
 
-####Subclassing SKSpriteNode
+#### Subclassing SKSpriteNode
 
 __Swift__
 
@@ -128,7 +128,7 @@ class GameScene: SKScene {
 
 ````
 
-####Playing a Sound file in a Scene
+#### Playing a Sound file in a Scene
 
 ___Swift___
 
@@ -155,7 +155,7 @@ ___Objective-C___
     //[self runAction:[SKAction repeatActionForever:soundAction]];
 ````
 
-####Applying an Action (e.g. Move) to a Sprite Node in a Scene
+#### Applying an Action (e.g. Move) to a Sprite Node in a Scene
 
 ___Swift___
 
@@ -175,7 +175,7 @@ ___Objective-C___
 
 ````
 
-####Applying a Sequence of Actions to a Sprite Node in a Scene
+#### Applying a Sequence of Actions to a Sprite Node in a Scene
 
 ___Swift___
 
@@ -223,7 +223,7 @@ ___Swift___
         
 ````
 
-####Executing a Custom Action
+#### Executing a Custom Action
 
 ___Swift___
 
@@ -246,7 +246,7 @@ ___Objective-C___
     [scene runAction: [SKAction repeatActionForever:makeAsteroids]];
 ````
 
-####Animating Textures and Executing Multiple Actions in Parallel
+#### Animating Textures and Executing Multiple Actions in Parallel
 
 ___Swift___
 
@@ -269,7 +269,7 @@ ___Swift___
     scene.runAction(walkAnimation)
 ````
 
-####Handling a User's Touch Gestures on a Scene
+#### Handling a User's Touch Gestures on a Scene
 
 ___Swift___
 
@@ -363,7 +363,7 @@ ___Objective-C___
 }
 ````
 
-####Evaluating if a Sprite Node was touched in a Scene
+#### Evaluating if a Sprite Node was touched in a Scene
 
 __Swift__
 
@@ -396,7 +396,7 @@ override func touchesMoved (touches: Set<UITouch>, withEvent event: UIEvent?) {
 
 ````
 
-####Configuring the Physics Body property of a Sprite Node
+#### Configuring the Physics Body property of a Sprite Node
 
 ___Swift___
 
@@ -417,7 +417,7 @@ ___Objective-C___
     
 ````
 
-####Configuring the Gravity of the Scene
+#### Configuring the Gravity of the Scene
 
 __Swift__
 
@@ -428,7 +428,7 @@ __Swift__
     }
 ````
 
-####Detecting Collision Between Sprite Node Physics Bodies
+#### Detecting Collision Between Sprite Node Physics Bodies
 
 ___Swift___
 
@@ -469,7 +469,7 @@ ___Objective-C___
 	}
 ````
 
-####Creating an SKEmitter Node (e.g. Particles/Explosion)
+#### Creating an SKEmitter Node (e.g. Particles/Explosion)
 
 ___Swift___
 
@@ -548,7 +548,7 @@ ___Objective-C___
 }
 ````
 
-####Adding a SpriteKit Particle File to your Scene
+#### Adding a SpriteKit Particle File to your Scene
 
 ___Swift___
 
@@ -566,7 +566,7 @@ ___Swift___
      self.addChild(fireEmitter)
 ````
 
-####Transitioning Between Scenes
+#### Transitioning Between Scenes
 
 ___Swift___
 
@@ -579,6 +579,7 @@ ___Swift___
             
 ````
 
-##Connect
+## Connect
+
 * Twitter: [@clintcabanero](http://twitter.com/clintcabanero)
 * GitHub: [ccabanero](http:///github.com/ccabanero)
