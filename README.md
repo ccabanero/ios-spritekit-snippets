@@ -56,7 +56,6 @@ ___Swift___
     spriteNode.name = "redSquare"
     spriteNode.position = CGPointMake(CGRectGetMidX(self.frame), CGRectGetMidY(self.frame)) 
     self.addChild(spriteNode)
-    
 ````
 ___Objective-C___
 
@@ -65,7 +64,6 @@ ___Objective-C___
     spriteNode.name = @"redSquare";
     spriteNode.position = CGPointMake(CGRectGetMaxX(self.frame) - 100, CGRectGetMinY(self.frame) + 150);
     [self addChild:spriteNode];
-    
 ````
 
 #### Adding a Sprite with an Image/Texture to a Scene
@@ -73,7 +71,7 @@ ___Objective-C___
 ___Swift___
 
 ````
-	let backgroundSpaceNode = SKSpriteNode(imageNamed: "spacebackground")
+    let backgroundSpaceNode = SKSpriteNode(imageNamed: "spacebackground")
     backgroundSpaceNode.position = CGPointMake(self.size.width/2, self.size.height/2)
     backgroundSpaceNode.zPosition = -1
     self.addChild(backgroundSpaceNode)
@@ -93,7 +91,6 @@ ___Objective-C___
 __Swift__
 
 ````
-
 // Declaring the SKSpriteNode subclass
 
 class Hero: SKSpriteNode {
@@ -125,7 +122,6 @@ class GameScene: SKScene {
         self.addChild(hero)
     }
 }
-
 ````
 
 #### Playing a Sound file in a Scene
@@ -139,8 +135,7 @@ ___Swift___
     scene.runAction(soundAction)
 
     //play and repeat forever
-    //self.runAction(SKAction.repeatActionForever(soundAction))
-        
+    //self.runAction(SKAction.repeatActionForever(soundAction))   
 ````
 
 ___Objective-C___
@@ -162,8 +157,7 @@ ___Swift___
 ````
 	let moveAction = SKAction.moveByX(100.0, y:0.0, duration: 4.0)
     
-    spaceshipNode.runAction(moveAction)
-        
+    spaceshipNode.runAction(moveAction)    
 ````
 
 ___Objective-C___
@@ -172,7 +166,6 @@ ___Objective-C___
 	SKAction *moveAction = [SKAction moveByX:100.0 y:0.0 duration:4.0];
 	
 	[spaceshipNode runAction:moveAction];
-
 ````
 
 #### Applying a Sequence of Actions to a Sprite Node in a Scene
@@ -187,8 +180,7 @@ ___Swift___
         SKAction.moveByX(0.0, y:-10.0, duration:1.0),
         SKAction.moveByX(0.0, y:-5.0, duration:1.0)])
         
-    spaceshipNode.runAction(SKAction.repeatActionForever(hover))
-        
+    spaceshipNode.runAction(SKAction.repeatActionForever(hover))   
 ````
 
 ___Objective-C___
@@ -203,10 +195,9 @@ ___Objective-C___
                                 [SKAction moveByX:0.0 y:-5 duration:1.0]]];
                                 
     [spaceshipNode runAction: [SKAction repeatActionForever:hover]];
-    
 ````
 
-####Executing a Callback after Running an Action on a Sprite Node
+#### Executing a Callback after Running an Action on a Sprite Node
 
 ___Swift___
 
@@ -220,7 +211,6 @@ ___Swift___
         laser.hidden = true
         laser.physicsBody?.dynamic = false
     })
-        
 ````
 
 #### Executing a Custom Action
@@ -393,7 +383,6 @@ override func touchesMoved (touches: Set<UITouch>, withEvent event: UIEvent?) {
             }
         }
     }
-
 ````
 
 #### Configuring the Physics Body property of a Sprite Node
@@ -402,19 +391,16 @@ ___Swift___
 
 ````
 	spaceshipNode.physicsBody = SKPhysicsBody(circleOfRadius: 75)
-    spaceshipNode.physicsBody?.affectedByGravity = false
-    spaceshipNode.physicsBody?.mass = 0.02
-    
+	spaceshipNode.physicsBody?.affectedByGravity = false
+	spaceshipNode.physicsBody?.mass = 0.02
 ````
 
 ___Objective-C___
 
 ````
-	...
 	spaceshipNode.physicsBody = [SKPhysicsBody bodyWithCircleOfRadius:75];
-    spaceshipNode.falconNode.physicsBody.affectedByGravity = NO;
-    spaceshipNode.falconNode.physicsBody.mass = 0.02;
-    
+	spaceshipNode.falconNode.physicsBody.affectedByGravity = NO;
+	spaceshipNode.falconNode.physicsBody.mass = 0.02; 
 ````
 
 #### Configuring the Gravity of the Scene
@@ -505,7 +491,6 @@ ___Swift___
         
         return explosion
     }
-    
 ````
 
 ___Objective-C___
@@ -552,18 +537,17 @@ ___Objective-C___
 
 ___Swift___
 
-````
-
-	//create file via Xcode - File - SpriteKit Particle File - template ...
+```` 
+   //create file via Xcode - File - SpriteKit Particle File - template ...
 	
-	 let fireEmitter = SKEmitterNode(fileNamed: "smallFire.sks")
-     fireEmitter.position = CGPointMake(self.frame.size.width/2, self.frame.size.height/2 - 200)
-     fireEmitter.name = "smallFire"
-     fireEmitter.zPosition = 1
-     fireEmitter.targetNode = self
-     fireEmitter.particleLifetime = 1
+	let fireEmitter = SKEmitterNode(fileNamed: "smallFire.sks")
+   fireEmitter.position = CGPointMake(self.frame.size.width/2, self.frame.size.height/2 - 200)
+   fireEmitter.name = "smallFire"
+   fireEmitter.zPosition = 1
+   fireEmitter.targetNode = self
+   fireEmitter.particleLifetime = 1
         
-     self.addChild(fireEmitter)
+   self.addChild(fireEmitter)
 ````
 
 #### Transitioning Between Scenes
@@ -575,8 +559,7 @@ ___Swift___
 	asteroidScene.scaleMode = SKSceneScaleMode.AspectFill
             
 	let transition = SKTransition.revealWithDirection(SKTransitionDirection.Down, duration: 1.0)
-	self.view?.presentScene(asteroidScene, transition:transition)
-            
+	self.view?.presentScene(asteroidScene, transition:transition)     
 ````
 
 ## Connect
